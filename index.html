@@ -83,7 +83,11 @@
     else if(data.weather[0].main =="Mist"){
       weatherIcon.src = icons/mist.png;
     }
-  
+    // preventing draft weather data from displaying
+    document.querySelector(" .weather").style.display = "block";
+
+    // The error message will only display if an invalid city is entered
+    document.querySelector(".error").style.display = "none";
    }
     
       }
